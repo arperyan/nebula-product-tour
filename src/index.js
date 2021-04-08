@@ -2,6 +2,7 @@ import { useElement, useEffect, useLayout } from "@nebula.js/stardust";
 import properties from "./object-properties";
 import data from "./data";
 import ext from "./ext";
+import stepProps from "./stepdata";
 
 import {
     render,
@@ -17,24 +18,7 @@ export default function supernova() {
         component() {
             const element = useElement();
             const layout = useLayout();
-            const stepProps = [
-                {
-                    id: "1",
-                    text: "first",
-                    title: "My First",
-                    el: "[title='Stop editing sheet']",
-                    firstAction: "exit",
-                    lastAction: "next",
-                },
-                {
-                    id: "2",
-                    text: "second",
-                    title: "My Second",
-                    el: ".end",
-                    firstAction: "back",
-                    lastAction: "complete",
-                },
-            ];
+
             useEffect(() => {
                 console.log(layout.myTextarea);
                 render(element, {
