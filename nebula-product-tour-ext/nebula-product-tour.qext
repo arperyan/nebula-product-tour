@@ -1,0 +1,11 @@
+{
+  "name": "nebula-product-tour",
+  "version": "0.1.0",
+  "description": "",
+  "author": {
+    "name": "arperyan",
+    "email": "ryan_arpe@hotmail.com"
+  },
+  "icon": "extension",
+  "type": "visualization"
+}
