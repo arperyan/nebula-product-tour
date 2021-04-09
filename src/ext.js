@@ -25,7 +25,7 @@ export default function ext() {
                                     ref: "myColor",
                                     type: "object",
                                     defaultValue: {
-                                        color: "ff5866",
+                                        color: "#ff5866",
                                         index: "-1",
                                     },
                                 },
