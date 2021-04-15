@@ -55,6 +55,10 @@ a {
     padding: 0.5em 1em;
 }
 
+.shepherd-arrow:before {
+    background: #dadcdc;
+}
+
 .shepherd-title {
     weight: 600;
 }
@@ -68,8 +72,9 @@ a {
 }
 
 .displNone {
-    display: none !important;
+    display: none;
 }
-.shepherd-button {
-    background-color: pink;
-}
+
+/* .shepherd-button {
+    background-color: blue;
+} */
