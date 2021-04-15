@@ -1,8 +1,8 @@
-import { useElement, useEffect, useLayout, useApp } from "@nebula.js/stardust";
+import { useElement, useEffect, useLayout } from "@nebula.js/stardust";
 import properties from "./object-properties";
 import data from "./data";
 import ext from "./ext";
-import { stepProps } from "./stepdata";
+import stepProps from "./stepdata";
 
 import {
     render,
@@ -18,33 +18,11 @@ export default function supernova() {
         component() {
             const element = useElement();
             const layout = useLayout();
-            const app = useApp();
 
-            // app.getTablesAndKeys(
-            //     {
-            //         qcx: 1000,
-            //         qcy: 1000,
-            //     },
-            //     {
-            //         qcx: 0,
-            //         qcy: 0,
-            //     },
-            //     30,
-            //     true,
-            //     false
-            // ).then((result) => {
-            //     console.log(result);
-            // });
-
-            //app.createHyperCube();
-            app.getLibraryContent("default").then((content) => {
-                console.log(content);
-            });
             useEffect(() => {
+                console.log(layout.myTextarea);
                 render(element, {
-                    stepProps: layout.myTextarea
-                        ? JSON.parse(layout.myTextarea)
-                        : stepProps,
+                    stepProps: JSON.parse(layout.myTextarea) || stepProps,
                     color: layout.myColor?.color || "red",
                 });
                 return (
