@@ -37,9 +37,9 @@ export default function supernova() {
             // });
 
             //app.createHyperCube();
-            app.getLibraryContent("default").then((content) => {
-                console.log(content);
-            });
+            // app.getLibraryContent("default").then((content) => {
+            //     console.log(content);
+            // });
             useEffect(() => {
                 render(element, {
                     stepProps: layout.myTextarea
