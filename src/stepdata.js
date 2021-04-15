@@ -6,7 +6,7 @@ export const stepProps = [
         el: "[title='Stop editing sheet']",
         firstAction: "exit",
         lastAction: "next",
-        noEl: false,
+        openAction: false,
     },
     {
         id: "2",
