@@ -1,27 +1,32 @@
 export const stepProps = [
     {
         id: "1",
-        text: `first <img src="/content/default/Qlik_default_feathers.png"></img>`,
-        title: "My First ",
-        el: "[title='Stop editing sheet']",
+        text: `Global menu with navigation options, and actions that you can perform in your app. For more information about tabbed browsing and the global menu`,
+        title: "Menu",
+        el: "[title='navigation']",
         firstAction: "exit",
         lastAction: "next",
-        openAction: false,
+        openAction: true,
     },
     {
         id: "2",
-        text: "second",
-        title: "My Second",
-        el: ".MuiIconButton-label",
+        text: `Menu options will be different depending on: </br>
+        <ul>
+        <li>Whether you are editing or analyzing (viewing) charts in an app.</li>
+        <li>The chart type.</li>
+        <li>The privileges that have been assigned to you by your administrator.</li>
+        </ul`,
+        title: "Menu Items",
+        el: "#rlui-popover-1",
         firstAction: "back",
         lastAction: "next",
         openAction: false,
     },
     {
         id: "3",
-        text: "second",
-        title: "My Second",
-        el: "[value='isReadFromCacheEnabled']",
+        text: "Access to all bookmarks in the app, and create a new bookmark.",
+        title: "Bookmarks",
+        el: "[title='Bookmarks']",
         firstAction: "back",
         lastAction: "next",
         openAction: false,
