@@ -3,7 +3,6 @@ import App from "./App.svelte";
 let app;
 
 export function render(element, props) {
-  console.log(props);
   if (app) app.$destroy();
   return (app = new App({
     target: element || document.body,

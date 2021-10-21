@@ -3,8 +3,6 @@
   import { steps } from "./steps";
 
   export let stepProps;
-  export let color = "red";
-  let size = "14px";
 
   const shepherd = new Shepherd.Tour({
     defaultStepOptions: {
@@ -28,33 +26,15 @@
   };
 
   shepherd.addSteps(result);
-
-  function cssVariables(node, variables) {
-    setCssVariables(node, variables);
-
-    return {
-      update(variables) {
-        setCssVariables(node, variables);
-      },
-    };
-  }
-  function setCssVariables(node, variables) {
-    for (const name in variables) {
-      node.style.setProperty(`--${name}`, variables[name]);
-    }
-  }
 </script>
 
-<button
-  type="button"
-  class="tour ripple"
-  on:click={startTour}
-  use:cssVariables={{ size, color }}>Start Tour</button
+<button type="button" class="tour ripple" on:click={startTour}
+  >Start Tour</button
 >
 
 <style>
   .tour {
-    background-color: var(--color);
+    background-color: var(--color, #1087ef);
     border-radius: 8px;
     padding: 10px 20px;
     border: none;
@@ -62,7 +42,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: var(--size);
+    font-size: 14px;
     margin: 4px 2px;
     cursor: pointer;
   }
@@ -72,8 +52,9 @@
     transition: background 0.6s;
   }
   .ripple:hover {
-    background: var(--color)
-      radial-gradient(circle, transparent 1%, var(--color) 1%) center/15000%;
+    background: var(--color, #1087ef)
+      radial-gradient(circle, transparent 1%, var(--color, #1087ef) 1%)
+      center/15000%;
     opacity: 0.7;
   }
   .ripple:active {

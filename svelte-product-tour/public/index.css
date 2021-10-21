@@ -1,43 +1,43 @@
 html,
 body {
-    font-family: "GT Pressura", "proxima-nova", "Helvetica Neue", sans-serif;
+  font-family: "GT Pressura", "proxima-nova", "Helvetica Neue", sans-serif;
 }
 
 body {
-    height: 100%;
-    margin: 0;
+  height: 100%;
+  margin: 0;
 }
 
 a {
-    transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .a11y-icon {
-    left: 50%;
-    transform: translateX(-50%) translateY(10%);
+  left: 50%;
+  transform: translateX(-50%) translateY(10%);
 }
 
 .customizable-icon {
-    left: 50%;
-    transform: translateX(-50%) translateY(25%);
+  left: 50%;
+  transform: translateX(-50%) translateY(25%);
 }
 
 .framework-icon {
-    left: 50%;
-    transform: translateX(-50%) translateY(35%);
+  left: 50%;
+  transform: translateX(-50%) translateY(35%);
 }
 
 .button {
-    cursor: pointer;
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: 0.25s ease-in-out;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.25s ease-in-out;
 }
 
 .button:hover {
-    background: #f3f5f5;
-    transform: translateX(10px) translateY(-10px);
+  background: #f3f5f5;
+  transform: translateX(10px) translateY(-10px);
 }
 
 /* .shepherd-modal-overlay-container {
@@ -46,30 +46,23 @@ a {
 } */
 
 .shepherd-element.shepherd-has-title[data-popper-placement^="bottom"]
-    > .shepherd-arrow:before {
-    background-color: #dadcdc;
+  > .shepherd-arrow:before {
+  background-color: #dadcdc;
 }
 
 .shepherd-has-title .shepherd-content .shepherd-header {
-    background-color: #dadcdc;
-    padding: 0.5em 1em;
+  background-color: #dadcdc;
+  padding: 0.5em 1em;
 }
 
 .shepherd-title {
-    weight: 600;
+  weight: 600;
 }
 
 .shepherd-text {
-    padding: 1em;
+  padding: 1em;
 }
 
 .shepherd-element {
-    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
-}
-
-.displNone {
-    display: none !important;
-}
-.shepherd-button {
-    background-color: pink;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
 }
