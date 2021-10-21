@@ -1,4 +1,4 @@
-export default stepProps = [
+export const stepProps = [
     {
         id: "1",
         text: "first",
@@ -6,52 +6,14 @@ export default stepProps = [
         el: "[title='Stop editing sheet']",
         firstAction: "exit",
         lastAction: "next",
-        noEl: false,
     },
     {
         id: "2",
         text: "second",
         title: "My Second",
-        el: ".MuiIconButton-label",
-        firstAction: "back",
-        lastAction: "next",
-        openAction: false,
-    },
-    {
-        id: "3",
-        text: "second",
-        title: "My Second",
-        el: "[value='isReadFromCacheEnabled']",
-        firstAction: "back",
-        lastAction: "next",
-        openAction: false,
-    },
-    {
-        id: "4",
-        text: "second",
-        title: "My Second",
-        el:
-            "button[class='MuiButtonBase-root MuiTab-root MuiTab-textColorInherit']",
-        firstAction: "back",
-        lastAction: "next",
-        openAction: true,
-    },
-    {
-        id: "5",
-        text: "second",
-        title: "My Second",
-        el: "noEl",
-        firstAction: "back",
-        lastAction: "next",
-        openAction: false,
-    },
-    {
-        id: "6",
-        text: "second",
-        title: "My hhhh",
-        el: "[title='Edit']",
+       el: ".end",
         firstAction: "back",
         lastAction: "complete",
-        openAction: false,
     },
 ];
+

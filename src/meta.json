@@ -1,0 +1,9 @@
+{
+    "name": "Nebula Product Tour",
+    "description": "Tour of how to use Qlik",
+    "icon": "extension",
+    "preview": "preview.png",
+    "author": "Ryan Arpe",
+    "supernova": true,
+    "type": "visualization"
+}

@@ -3,6 +3,7 @@ const properties = {
   title: '',
   subtitle: '',
   footnote: '',
-};
+
+}
 
 export default properties;
